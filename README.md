@@ -20,6 +20,33 @@
 </ol>
 
 </p>
+
 <h3>What this agent does</h3>
-<img src="https://github.com/user-attachments/assets/de9f694b-e108-4262-848f-30cd763dc02b" >
-<p></p>
+
+<p>
+
+  <ol>
+    <li>Initialization</li>
+    <p>Provide a file containing URLs to test. The script creates a Scanner for each URL.It builds a massive "Payload List" by combining:Standard paths (/etc/passwd).Double-encoded paths (to bypass filters).Paths with null bytes (%00.jpg).</p>
+
+<li>Authentication Check</li>
+<p>The script visits the URL once to check if it works.Smart Check: If the page contains words like "login" or "password", the script PAUSES.It asks you to paste a PHPSESSID cookie.It saves this cookie so it can scan the "logged in" part of the site.</p>
+
+<li>The Scanning Loop</li>
+<p>It looks at the URL (e.g., site.com?page=index&view=home).It isolates one parameter at a time (e.g., starts with page).Baseline: It sends a safe request (page=test123) to see what the normal response looks like (length and content).</p>
+
+<li>The Exploitation Loop</li>
+<p>It starts replacing the parameter value with the Payload List.Example: It tries page=../../../etc/passwd.It waits for the server response.</p>
+
+<li>Detection & Reporting</li>
+<p>It compares the malicious response to the Baseline.
+  
+  Success Criteria: Does the response contain root: or daemon:? (Found /etc/passwd) Is the response way bigger than normal?
+  
+  If YES: It prints the success message and saves the data to a text file, then moves to the next URL.
+  
+  If NO: It tries the next payload in the list.
+</p>
+</ol>
+Workflow Diagram:
+</p>
