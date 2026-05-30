@@ -81,4 +81,10 @@ The scanner runs in Batch Mode. You must provide a text file containing the list
     <li>Enter File: When prompted, type the name of your target file (e.g., targets.txt).</li>
     <li>Authentication (Optional): If the script detects a login page, it will pause and ask to enter the value of the PHPSESSID cookie.</li>
 Enter it into the terminal and press Enter.
+  </ul>
   </p>
+  <li>📊 Output</li>
+  <p></p>
+  </ol>
+
+  
