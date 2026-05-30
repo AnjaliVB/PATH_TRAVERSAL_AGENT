@@ -51,3 +51,34 @@
 Workflow Diagram:
 <img src="https://github.com/user-attachments/assets/de9f694b-e108-4262-848f-30cd763dc02b">
 </p>
+
+<h4>📋 Prerequisites</h4>
+Python 3.x
+pip (Python package manager)
+<h4>🛠️ Installation</h4>
+Clone or download this repository.
+Install the required dependencies:
+
+    pip install requests urllib3
+<h4>🚀 Usage</h4>
+The scanner runs in Batch Mode. You must provide a text file containing the list of target URLs.
+
+<h4>Steps:</h4>
+<ol>
+  <li>Create a Target List</li>
+  <p>Create a file in the same directory as the script. Add one URL per line. Ensure the URLs contain query parameters to test.
+  Eg. http://example.com/view.php?page=home
+  </p>  
+<li>Run the Scanner</li>
+<p>Execute the script using Python:
+
+    python3 v25.py
+      
+</p>
+<li>Follow the Prompts</li>
+<p>
+  <ul>
+    <li>Enter File: When prompted, type the name of your target file (e.g., targets.txt).</li>
+    <li>Authentication (Optional): If the script detects a login page, it will pause and ask to enter the value of the PHPSESSID cookie.</li>
+Enter it into the terminal and press Enter.
+  </p>
