@@ -84,7 +84,12 @@ Enter it into the terminal and press Enter.
   </ul>
   </p>
   <li>📊 Output</li>
-  <p></p>
+  <p>Here are some sample outputs:</p>
+  <img src="https://github.com/user-attachments/assets/eddb1582-0119-4413-acbb-af5cfc450e03" >
+  <img src="https://github.com/user-attachments/assets/e134a849-09d3-45b3-8c1b-a121111c0a6d">
+  <img src="https://github.com/user-attachments/assets/698bccfd-9333-4a8a-93f7-fa71d8da08b2" >
+  <img src="https://github.com/user-attachments/assets/22fe537e-1a54-4383-b7b3-0e2d00e9dfeb">
+  <img src="https://github.com/user-attachments/assets/1ac21f99-dfd8-4e5b-9fca-5a9e421b4bec">
   </ol>
 
   
