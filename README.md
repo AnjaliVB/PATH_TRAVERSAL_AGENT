@@ -85,8 +85,8 @@ Enter it into the terminal and press Enter.
   </p>
   <li>📊 Output</li>
   <p>Here are some sample outputs:</p>
-  <img src="https://github.com/user-attachments/assets/eddb1582-0119-4413-acbb-af5cfc450e03" >
-  <img src="https://github.com/user-attachments/assets/e134a849-09d3-45b3-8c1b-a121111c0a6d">
+  <p><img src="https://github.com/user-attachments/assets/eddb1582-0119-4413-acbb-af5cfc450e03">
+  <img src="https://github.com/user-attachments/assets/e134a849-09d3-45b3-8c1b-a121111c0a6d"></p>
   </ol>
 
   
