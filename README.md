@@ -89,4 +89,21 @@ Enter it into the terminal and press Enter.
   <img src="https://github.com/user-attachments/assets/e134a849-09d3-45b3-8c1b-a121111c0a6d"></p>
   </ol>
 
-  
+<h4>Core Security Features</h4>
+<ul>
+<li>🛡️ Dynamic Double Encoding</li>
+Automatically generates double-encoded payloads (e.g., converting ../ to %252f) to bypass Web Application Firewalls (WAFs) and strict input filters.
+<li>💉 Null Byte Injection</li>
+Appends null byte sequences (%00) followed by common file extensions (like .jpg or .png) to bypass file extension validation checks on older server configurations.
+<li>🌐 External Payload Integration</li>
+Attempts to fetch and merge an updated list of directory traversal payloads from the PayloadsAllTheThings GitHub repository for broader coverage.
+<li>🔐 Interactive Authentication Handling</li>
+Detects login pages automatically and pauses execution to allow users to input session cookies (e.g., PHPSESSID), enabling the scanner to test authenticated areas of the application.
+<li>🧠 Smart Vulnerability Detection</li>
+Uses a hybrid detection method that analyzes both response content (searching for markers like root: or daemon:) and significant response size variations to identify vulnerabilities accurately.
+Usability Features
+<li>📂 Batch Mode Processing</li>
+Accepts a text file containing a list of URLs, allowing for mass scanning of multiple targets in a single execution.
+<li>💾 Automatic Reporting</li>
+When a vulnerability is found, the script automatically saves the full HTTP response to a timestamped text file for later analysis.
+</ul>
